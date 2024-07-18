@@ -19,7 +19,7 @@
                             <!-- <nav class="-mx-3 flex flex-1 justify-end"> -->
                                 @auth
                                     <a
-                                        href="{{ url('/dashboard') }}"
+                                        href="{{route('penduduk.index')}}"
                                        class="nav-item nav-link"
                                     >
                                         Dashboard
@@ -29,7 +29,7 @@
                                         href="{{ route('login') }}"
                                         class="nav-item nav-link"
                                     >
-                                        Log in
+                                        Login
                                     </a>
 
                                     @if (Route::has('register'))
